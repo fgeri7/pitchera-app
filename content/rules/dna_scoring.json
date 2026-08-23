@@ -1,0 +1,18 @@
+{
+  "types": [
+    "beer_lover",
+    "hothead",
+    "mercenary",
+    "old_timer",
+    "warrior",
+    "youngster"
+  ],
+  "own": {
+    "0": -5,
+    "1": 0,
+    "2": 8,
+    "3": 21,
+    "4": 44
+  },
+  "opponentPerPlayer": -3
+}

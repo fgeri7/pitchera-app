@@ -1,0 +1,17 @@
+{
+  "positions": {
+    "defender": [
+      "sweeper",
+      "wing_back"
+    ],
+    "midfielder": [
+      "anchor_man",
+      "playmaker"
+    ],
+    "forward": [
+      "target_man",
+      "sniper"
+    ]
+  },
+  "specialistBonus": 5
+}

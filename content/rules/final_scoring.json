@@ -1,0 +1,15 @@
+{
+  "categories": [
+    "players_upgrades_injuries",
+    "staff_captain",
+    "budget",
+    "projects_blunders_training_trophy_sold_players",
+    "squad_age",
+    "compatriots",
+    "club_dna",
+    "transfer_target"
+  ],
+  "compatriot": 7,
+  "ageHierarchy": 10,
+  "cashPerPrestige": 100
+}

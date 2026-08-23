@@ -1,0 +1,16 @@
+{
+  "max": 8,
+  "levels": {
+    "0": null,
+    "1": "UNRESOLVED",
+    "2": "captains_immunity",
+    "3": "fanshop_launch",
+    "4": "physio_clinic",
+    "5": "hall_of_fame",
+    "6": "public_funding",
+    "7": "morale_boost",
+    "8": "training_trophy"
+  },
+  "hallOfFamePerSoldPlayer": 3,
+  "trainingTrophyPrestige": 10
+}

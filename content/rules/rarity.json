@@ -1,0 +1,41 @@
+{
+  "rarities": [
+    {
+      "id": "hobby",
+      "basePrestige": 2,
+      "baseAuctionPrice": 200
+    },
+    {
+      "id": "amateur",
+      "basePrestige": 4,
+      "baseAuctionPrice": 300
+    },
+    {
+      "id": "pro",
+      "basePrestige": 5,
+      "baseAuctionPrice": 400
+    },
+    {
+      "id": "workhorse",
+      "basePrestige": null,
+      "baseAuctionPrice": 500,
+      "dynamic": "2 + trainingLevel"
+    },
+    {
+      "id": "talent",
+      "basePrestige": null,
+      "baseAuctionPrice": 500,
+      "dynamic": "mentor.basePrestige"
+    },
+    {
+      "id": "star",
+      "basePrestige": 9,
+      "baseAuctionPrice": 600
+    },
+    {
+      "id": "legend",
+      "basePrestige": 10,
+      "baseAuctionPrice": 700
+    }
+  ]
+}
