@@ -1,0 +1,222 @@
+{
+  "count": 8,
+  "status": "ORIGINAL_RECONSTRUCTION",
+  "records": [
+    {
+      "id": "sponsor_01",
+      "name": "Local Sponsor 1",
+      "startingBudget": 900,
+      "week1": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_players",
+          "value": 1
+        }
+      },
+      "week2": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_players",
+          "value": 1
+        }
+      },
+      "week3": {
+        "fixed": "trainingLevelTimes100",
+        "sideTask": {
+          "type": "minimum_players",
+          "value": 1
+        }
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "sponsor_02",
+      "name": "Local Sponsor 2",
+      "startingBudget": 1000,
+      "week1": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_training",
+          "value": 2
+        }
+      },
+      "week2": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_training",
+          "value": 2
+        }
+      },
+      "week3": {
+        "fixed": "trainingLevelTimes100",
+        "sideTask": {
+          "type": "minimum_training",
+          "value": 2
+        }
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "sponsor_03",
+      "name": "Local Sponsor 3",
+      "startingBudget": 1100,
+      "week1": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_cash",
+          "value": 500
+        }
+      },
+      "week2": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_cash",
+          "value": 500
+        }
+      },
+      "week3": {
+        "fixed": "trainingLevelTimes100",
+        "sideTask": {
+          "type": "minimum_cash",
+          "value": 500
+        }
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "sponsor_04",
+      "name": "Local Sponsor 4",
+      "startingBudget": 1200,
+      "week1": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_matching_dna",
+          "value": 1
+        }
+      },
+      "week2": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_matching_dna",
+          "value": 1
+        }
+      },
+      "week3": {
+        "fixed": "trainingLevelTimes100",
+        "sideTask": {
+          "type": "minimum_matching_dna",
+          "value": 1
+        }
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "sponsor_05",
+      "name": "Local Sponsor 5",
+      "startingBudget": 900,
+      "week1": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_specialists",
+          "value": 1
+        }
+      },
+      "week2": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_specialists",
+          "value": 1
+        }
+      },
+      "week3": {
+        "fixed": "trainingLevelTimes100",
+        "sideTask": {
+          "type": "minimum_specialists",
+          "value": 1
+        }
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "sponsor_06",
+      "name": "Local Sponsor 6",
+      "startingBudget": 1000,
+      "week1": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_nationality_pair",
+          "value": 1
+        }
+      },
+      "week2": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_nationality_pair",
+          "value": 1
+        }
+      },
+      "week3": {
+        "fixed": "trainingLevelTimes100",
+        "sideTask": {
+          "type": "minimum_nationality_pair",
+          "value": 1
+        }
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "sponsor_07",
+      "name": "Local Sponsor 7",
+      "startingBudget": 1100,
+      "week1": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_upgrades",
+          "value": 1
+        }
+      },
+      "week2": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_upgrades",
+          "value": 1
+        }
+      },
+      "week3": {
+        "fixed": "trainingLevelTimes100",
+        "sideTask": {
+          "type": "minimum_upgrades",
+          "value": 1
+        }
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "sponsor_08",
+      "name": "Local Sponsor 8",
+      "startingBudget": 1200,
+      "week1": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_projects",
+          "value": 1
+        }
+      },
+      "week2": {
+        "fixed": 500,
+        "sideTask": {
+          "type": "minimum_projects",
+          "value": 1
+        }
+      },
+      "week3": {
+        "fixed": "trainingLevelTimes100",
+        "sideTask": {
+          "type": "minimum_projects",
+          "value": 1
+        }
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    }
+  ]
+}

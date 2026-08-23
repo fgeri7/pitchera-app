@@ -1,0 +1,27 @@
+{
+  "version": "0.2",
+  "type": "mechanics_faithful_reconstruction",
+  "players": {
+    "min": 2,
+    "max": 4,
+    "lockerRoomSize": 4,
+    "weeks": 4
+  },
+  "auction": {
+    "playersRevealed": 3,
+    "minimumOverbid": 100,
+    "singleBidPerManagerPerPlayer": true
+  },
+  "event": {
+    "cardsDrawnMonday": 3,
+    "stack": {
+      "revealed": 1,
+      "hidden": 2
+    },
+    "carryLimit": 3
+  },
+  "scoring": {
+    "cashPerPrestige": 100
+  },
+  "officialExactContent": false
+}

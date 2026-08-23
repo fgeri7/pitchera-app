@@ -1,0 +1,398 @@
+{
+  "count": 14,
+  "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+  "records": [
+    {
+      "id": "target_01",
+      "name": "Chairman's Brief 1",
+      "mainReward": 7,
+      "requiredPlayers": [
+        {
+          "position": "forward",
+          "count": 2
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "defender",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "anchor_man",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "anchor_man",
+      "completionCost": 80
+    },
+    {
+      "id": "target_02",
+      "name": "Chairman's Brief 2",
+      "mainReward": 9,
+      "requiredPlayers": [
+        {
+          "position": "defender",
+          "count": 2
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "forward",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "playmaker",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "playmaker",
+      "completionCost": 120
+    },
+    {
+      "id": "target_03",
+      "name": "Chairman's Brief 3",
+      "mainReward": 11,
+      "requiredPlayers": [
+        {
+          "position": "midfielder",
+          "count": 2
+        },
+        {
+          "position": "forward",
+          "count": 1
+        },
+        {
+          "position": "defender",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "target_man",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "target_man",
+      "completionCost": 160
+    },
+    {
+      "id": "target_04",
+      "name": "Chairman's Brief 4",
+      "mainReward": 7,
+      "requiredPlayers": [
+        {
+          "position": "forward",
+          "count": 1
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "defender",
+          "count": 2
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "sniper",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "sniper",
+      "completionCost": 80
+    },
+    {
+      "id": "target_05",
+      "name": "Chairman's Brief 5",
+      "mainReward": 9,
+      "requiredPlayers": [
+        {
+          "position": "forward",
+          "count": 2
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "defender",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "sweeper",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "sweeper",
+      "completionCost": 120
+    },
+    {
+      "id": "target_06",
+      "name": "Chairman's Brief 6",
+      "mainReward": 11,
+      "requiredPlayers": [
+        {
+          "position": "defender",
+          "count": 2
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "forward",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "wing_back",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "wing_back",
+      "completionCost": 160
+    },
+    {
+      "id": "target_07",
+      "name": "Chairman's Brief 7",
+      "mainReward": 7,
+      "requiredPlayers": [
+        {
+          "position": "midfielder",
+          "count": 2
+        },
+        {
+          "position": "forward",
+          "count": 1
+        },
+        {
+          "position": "defender",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "playmaker",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "playmaker",
+      "completionCost": 80
+    },
+    {
+      "id": "target_08",
+      "name": "Chairman's Brief 8",
+      "mainReward": 9,
+      "requiredPlayers": [
+        {
+          "position": "forward",
+          "count": 1
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "defender",
+          "count": 2
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "target_man",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "target_man",
+      "completionCost": 120
+    },
+    {
+      "id": "target_09",
+      "name": "Chairman's Brief 9",
+      "mainReward": 11,
+      "requiredPlayers": [
+        {
+          "position": "forward",
+          "count": 2
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "defender",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "sniper",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "sniper",
+      "completionCost": 160
+    },
+    {
+      "id": "target_10",
+      "name": "Chairman's Brief 10",
+      "mainReward": 7,
+      "requiredPlayers": [
+        {
+          "position": "defender",
+          "count": 2
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "forward",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "sweeper",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "sweeper",
+      "completionCost": 80
+    },
+    {
+      "id": "target_11",
+      "name": "Chairman's Brief 11",
+      "mainReward": 9,
+      "requiredPlayers": [
+        {
+          "position": "midfielder",
+          "count": 2
+        },
+        {
+          "position": "forward",
+          "count": 1
+        },
+        {
+          "position": "defender",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "wing_back",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "wing_back",
+      "completionCost": 120
+    },
+    {
+      "id": "target_12",
+      "name": "Chairman's Brief 12",
+      "mainReward": 11,
+      "requiredPlayers": [
+        {
+          "position": "forward",
+          "count": 1
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "defender",
+          "count": 2
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "anchor_man",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "anchor_man",
+      "completionCost": 160
+    },
+    {
+      "id": "target_13",
+      "name": "Chairman's Brief 13",
+      "mainReward": 7,
+      "requiredPlayers": [
+        {
+          "position": "forward",
+          "count": 2
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "defender",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "playmaker",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "playmaker",
+      "completionCost": 80
+    },
+    {
+      "id": "target_14",
+      "name": "Chairman's Brief 14",
+      "mainReward": 9,
+      "requiredPlayers": [
+        {
+          "position": "defender",
+          "count": 2
+        },
+        {
+          "position": "midfielder",
+          "count": 1
+        },
+        {
+          "position": "forward",
+          "count": 1
+        }
+      ],
+      "specialistBonuses": [
+        {
+          "role": "target_man",
+          "reward": 1
+        }
+      ],
+      "status": "ORIGINAL_RECONSTRUCTION_BALANCED_V0_7",
+      "requiredRole": "target_man",
+      "completionCost": 120
+    }
+  ]
+}

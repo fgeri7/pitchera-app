@@ -1,0 +1,21 @@
+{
+  "version": "0.2",
+  "type": "mechanics_faithful_reconstruction",
+  "officialExactContent": false,
+  "playablePrototypeContent": true,
+  "counts": {
+    "players": 48,
+    "transferTargets": 14,
+    "sponsors": 8,
+    "staff": 10,
+    "upgrades": 23,
+    "injuries": 7,
+    "healing": 4,
+    "projects": 12,
+    "training": 12,
+    "leadershipBlunders": 6,
+    "wildcards": 4,
+    "sabotages": 3,
+    "managerBoards": 4
+  }
+}

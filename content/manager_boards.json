@@ -1,0 +1,53 @@
+{
+  "status": "CUSTOM_PROTOTYPE_PERKS_NOT_OFFICIAL",
+  "boards": [
+    {
+      "id": "board_01",
+      "name": "The Scout",
+      "perk": {
+        "id": "scouting_department",
+        "uses": "once_per_week",
+        "effect": "peek_at_next_player_card_without_reordering",
+        "directPrestige": 0,
+        "directCash": 0,
+        "directTraining": 0
+      }
+    },
+    {
+      "id": "board_02",
+      "name": "The Tactician",
+      "perk": {
+        "id": "tactical_director",
+        "uses": "once_per_game",
+        "effect": "swap_own_event_revealed_and_hidden_card",
+        "directPrestige": 0,
+        "directCash": 0,
+        "directTraining": 0
+      }
+    },
+    {
+      "id": "board_03",
+      "name": "The Academy",
+      "perk": {
+        "id": "youth_development_office",
+        "uses": "once_per_game",
+        "effect": "choose_any_eligible_non_talent_mentor",
+        "directPrestige": 0,
+        "directCash": 0,
+        "directTraining": 0
+      }
+    },
+    {
+      "id": "board_04",
+      "name": "The Negotiator",
+      "perk": {
+        "id": "transfer_negotiator",
+        "uses": "once_per_game",
+        "effect": "pass_after_overbid_without_replacement_action",
+        "directPrestige": 0,
+        "directCash": 0,
+        "directTraining": 0
+      }
+    }
+  ]
+}

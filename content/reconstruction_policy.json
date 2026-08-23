@@ -1,0 +1,14 @@
+{
+  "version": "0.2",
+  "officialExactContent": false,
+  "purpose": "Playable reconstruction preserving documented mechanics and economic envelopes.",
+  "replaceableWithOriginalContent": true,
+  "knownMissingOfficialData": [
+    "exact player identities/stats",
+    "exact Transfer Targets",
+    "exact Sponsors",
+    "exact Staff",
+    "exact Event Card text/effects",
+    "exact four Manager Board perks"
+  ]
+}
