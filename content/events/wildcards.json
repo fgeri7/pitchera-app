@@ -1,0 +1,30 @@
+{
+  "count": 4,
+  "status": "ORIGINAL_RECONSTRUCTION",
+  "records": [
+    {
+      "id": "wildcard_01",
+      "name": "Second Opinion",
+      "effect": "reroute_one_own_event_target",
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "wildcard_02",
+      "name": "Late Call",
+      "effect": "change_one_own_side_activity_choice",
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "wildcard_03",
+      "name": "Favour",
+      "effect": "waive_100_of_one_cost",
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "wildcard_04",
+      "name": "Old Contacts",
+      "effect": "look_at_one_discarded_event",
+      "status": "ORIGINAL_RECONSTRUCTION"
+    }
+  ]
+}

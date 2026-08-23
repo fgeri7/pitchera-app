@@ -1,0 +1,48 @@
+{
+  "count": 7,
+  "status": "ORIGINAL_RECONSTRUCTION",
+  "records": [
+    {
+      "id": "injury_01",
+      "name": "Injury 1",
+      "prestigePenalty": -2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "injury_02",
+      "name": "Injury 2",
+      "prestigePenalty": -2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "injury_03",
+      "name": "Injury 3",
+      "prestigePenalty": -3,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "injury_04",
+      "name": "Injury 4",
+      "prestigePenalty": -3,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "injury_05",
+      "name": "Injury 5",
+      "prestigePenalty": -4,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "injury_06",
+      "name": "Injury 6",
+      "prestigePenalty": -4,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "injury_07",
+      "name": "Injury 7",
+      "prestigePenalty": -5,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    }
+  ]
+}

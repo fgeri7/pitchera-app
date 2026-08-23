@@ -1,0 +1,259 @@
+{
+  "count": 23,
+  "status": "ORIGINAL_RECONSTRUCTION",
+  "records": [
+    {
+      "id": "upgrade_01",
+      "name": "Upgrade 1",
+      "category": "dribbling_skills",
+      "prestige": 2,
+      "requirements": {
+        "minimumTraining": 0,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_02",
+      "name": "Upgrade 2",
+      "category": "player_equipment",
+      "prestige": 2,
+      "requirements": {
+        "minimumTraining": 1,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_03",
+      "name": "Upgrade 3",
+      "category": "perks_privileges",
+      "prestige": 3,
+      "requirements": {
+        "minimumTraining": 2,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_04",
+      "name": "Upgrade 4",
+      "category": "tactical_evolution",
+      "prestige": 3,
+      "requirements": {
+        "minimumTraining": 3,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_05",
+      "name": "Upgrade 5",
+      "category": "dribbling_skills",
+      "prestige": 4,
+      "requirements": {
+        "minimumTraining": 4,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_06",
+      "name": "Upgrade 6",
+      "category": "player_equipment",
+      "prestige": 4,
+      "requirements": {
+        "minimumTraining": 0,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_07",
+      "name": "Upgrade 7",
+      "category": "perks_privileges",
+      "prestige": 5,
+      "requirements": {
+        "minimumTraining": 1,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_08",
+      "name": "Upgrade 8",
+      "category": "tactical_evolution",
+      "prestige": 2,
+      "requirements": {
+        "minimumTraining": 2,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_09",
+      "name": "Upgrade 9",
+      "category": "dribbling_skills",
+      "prestige": 2,
+      "requirements": {
+        "minimumTraining": 3,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_10",
+      "name": "Upgrade 10",
+      "category": "player_equipment",
+      "prestige": 3,
+      "requirements": {
+        "minimumTraining": 4,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_11",
+      "name": "Upgrade 11",
+      "category": "perks_privileges",
+      "prestige": 3,
+      "requirements": {
+        "minimumTraining": 0,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_12",
+      "name": "Upgrade 12",
+      "category": "tactical_evolution",
+      "prestige": 4,
+      "requirements": {
+        "minimumTraining": 1,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_13",
+      "name": "Upgrade 13",
+      "category": "dribbling_skills",
+      "prestige": 4,
+      "requirements": {
+        "minimumTraining": 2,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_14",
+      "name": "Upgrade 14",
+      "category": "player_equipment",
+      "prestige": 5,
+      "requirements": {
+        "minimumTraining": 3,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_15",
+      "name": "Upgrade 15",
+      "category": "perks_privileges",
+      "prestige": 2,
+      "requirements": {
+        "minimumTraining": 4,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_16",
+      "name": "Upgrade 16",
+      "category": "tactical_evolution",
+      "prestige": 2,
+      "requirements": {
+        "minimumTraining": 0,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_17",
+      "name": "Upgrade 17",
+      "category": "dribbling_skills",
+      "prestige": 3,
+      "requirements": {
+        "minimumTraining": 1,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_18",
+      "name": "Upgrade 18",
+      "category": "player_equipment",
+      "prestige": 3,
+      "requirements": {
+        "minimumTraining": 2,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_19",
+      "name": "Upgrade 19",
+      "category": "perks_privileges",
+      "prestige": 4,
+      "requirements": {
+        "minimumTraining": 3,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_20",
+      "name": "Upgrade 20",
+      "category": "tactical_evolution",
+      "prestige": 4,
+      "requirements": {
+        "minimumTraining": 4,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_21",
+      "name": "Upgrade 21",
+      "category": "dribbling_skills",
+      "prestige": 5,
+      "requirements": {
+        "minimumTraining": 0,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_22",
+      "name": "Upgrade 22",
+      "category": "player_equipment",
+      "prestige": 2,
+      "requirements": {
+        "minimumTraining": 1,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "upgrade_23",
+      "name": "Upgrade 23",
+      "category": "perks_privileges",
+      "prestige": 2,
+      "requirements": {
+        "minimumTraining": 2,
+        "upgradeCapacity": 1
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    }
+  ]
+}

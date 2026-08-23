@@ -1,0 +1,38 @@
+{
+  "count": 4,
+  "status": "ORIGINAL_RECONSTRUCTION",
+  "records": [
+    {
+      "id": "healing_01",
+      "name": "Healing 1",
+      "effect": {
+        "type": "remove_injury"
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "healing_02",
+      "name": "Healing 2",
+      "effect": {
+        "type": "remove_injury"
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "healing_03",
+      "name": "Healing 3",
+      "effect": {
+        "type": "remove_injury"
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "healing_04",
+      "name": "Healing 4",
+      "effect": {
+        "type": "remove_injury"
+      },
+      "status": "ORIGINAL_RECONSTRUCTION"
+    }
+  ]
+}

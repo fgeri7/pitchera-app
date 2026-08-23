@@ -1,0 +1,114 @@
+{
+  "count": 12,
+  "status": "ORIGINAL_RECONSTRUCTION",
+  "records": [
+    {
+      "id": "project_01",
+      "name": "Pitch Repairs",
+      "activationCost": 100,
+      "prestigeReward": 2,
+      "subcategory": "community",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_02",
+      "name": "Clubhouse Refresh",
+      "activationCost": 200,
+      "prestigeReward": 3,
+      "subcategory": "infrastructure",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_03",
+      "name": "Community Day",
+      "activationCost": 200,
+      "prestigeReward": 4,
+      "subcategory": "training",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_04",
+      "name": "Youth Clinic",
+      "activationCost": 300,
+      "prestigeReward": 5,
+      "subcategory": "clubhouse",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_05",
+      "name": "Floodlights",
+      "activationCost": 100,
+      "prestigeReward": 2,
+      "subcategory": "community",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_06",
+      "name": "Kit Room",
+      "activationCost": 200,
+      "prestigeReward": 3,
+      "subcategory": "infrastructure",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_07",
+      "name": "Local Derby",
+      "activationCost": 200,
+      "prestigeReward": 4,
+      "subcategory": "training",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_08",
+      "name": "Pub Renovation",
+      "activationCost": 300,
+      "prestigeReward": 5,
+      "subcategory": "clubhouse",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_09",
+      "name": "Training Pitch",
+      "activationCost": 100,
+      "prestigeReward": 2,
+      "subcategory": "community",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_10",
+      "name": "Fan Zone",
+      "activationCost": 200,
+      "prestigeReward": 3,
+      "subcategory": "infrastructure",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_11",
+      "name": "Club Van",
+      "activationCost": 200,
+      "prestigeReward": 4,
+      "subcategory": "training",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "project_12",
+      "name": "Medical Room",
+      "activationCost": 300,
+      "prestigeReward": 5,
+      "subcategory": "clubhouse",
+      "synergyBonus": 2,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    }
+  ]
+}

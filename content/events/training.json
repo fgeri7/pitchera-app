@@ -1,0 +1,90 @@
+{
+  "count": 12,
+  "status": "ORIGINAL_RECONSTRUCTION",
+  "records": [
+    {
+      "id": "training_01",
+      "name": "Training Session 1",
+      "trainingGain": 1,
+      "cost": 100,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_02",
+      "name": "Training Session 2",
+      "trainingGain": 1,
+      "cost": 0,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_03",
+      "name": "Training Session 3",
+      "trainingGain": 1,
+      "cost": 0,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_04",
+      "name": "Training Session 4",
+      "trainingGain": 1,
+      "cost": 100,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_05",
+      "name": "Training Session 5",
+      "trainingGain": 1,
+      "cost": 0,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_06",
+      "name": "Training Session 6",
+      "trainingGain": 1,
+      "cost": 0,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_07",
+      "name": "Training Session 7",
+      "trainingGain": 1,
+      "cost": 100,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_08",
+      "name": "Training Session 8",
+      "trainingGain": 1,
+      "cost": 0,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_09",
+      "name": "Training Session 9",
+      "trainingGain": 2,
+      "cost": 0,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_10",
+      "name": "Training Session 10",
+      "trainingGain": 2,
+      "cost": 100,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_11",
+      "name": "Training Session 11",
+      "trainingGain": 2,
+      "cost": 0,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "training_12",
+      "name": "Training Session 12",
+      "trainingGain": 2,
+      "cost": 0,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    }
+  ]
+}

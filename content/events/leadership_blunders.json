@@ -1,0 +1,48 @@
+{
+  "count": 6,
+  "status": "ORIGINAL_RECONSTRUCTION",
+  "records": [
+    {
+      "id": "blunder_01",
+      "name": "Leadership Blunder 1",
+      "prestigePenalty": -2,
+      "revealImmediately": true,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "blunder_02",
+      "name": "Leadership Blunder 2",
+      "prestigePenalty": -2,
+      "revealImmediately": true,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "blunder_03",
+      "name": "Leadership Blunder 3",
+      "prestigePenalty": -3,
+      "revealImmediately": true,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "blunder_04",
+      "name": "Leadership Blunder 4",
+      "prestigePenalty": -3,
+      "revealImmediately": true,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "blunder_05",
+      "name": "Leadership Blunder 5",
+      "prestigePenalty": -4,
+      "revealImmediately": true,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    },
+    {
+      "id": "blunder_06",
+      "name": "Leadership Blunder 6",
+      "prestigePenalty": -5,
+      "revealImmediately": true,
+      "status": "ORIGINAL_RECONSTRUCTION"
+    }
+  ]
+}
