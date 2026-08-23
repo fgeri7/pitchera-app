@@ -1,0 +1,7 @@
+{
+  "name": "pitchera-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser runtime subset of the PITCHERA Rules Engine"
+}
