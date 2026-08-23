@@ -8,7 +8,7 @@ export async function loadContentBrowser(base = "./content") {
   const [
     config, manifest, reconstructionPolicy,
     boards, players, sponsors, staff, targets,
-    dnaScoring, finalScoring, positions, rarity, trainingLevels,
+    dna, finalScoring, positions, rarity, trainingLevels,
     healing, injuries, leadershipBlunders, projects,
     sabotages, training, upgrades, wildcards
   ] = await Promise.all([
@@ -35,30 +35,32 @@ export async function loadContentBrowser(base = "./content") {
     json(`${base}/events/wildcards.json`)
   ]);
 
-  // Preserve the engine's expected content shape.
+  const unwrap = x => x?.records ?? x?.boards ?? x?.items ?? x;
+
   return {
     config,
     manifest,
     reconstructionPolicy,
-    boards: boards.records ?? boards,
-    players: players.records ?? players,
-    sponsors: sponsors.records ?? sponsors,
-    staff: staff.records ?? staff,
-    targets: targets.records ?? targets,
-    dnaScoring,
+    boards: unwrap(boards),
+    players: unwrap(players),
+    sponsors: unwrap(sponsors),
+    staff: unwrap(staff),
+    targets: unwrap(targets),
+    dna,
     finalScoring,
     positions,
     rarity,
     trainingLevels,
     events: {
-      healing: healing.records ?? healing,
-      injuries: injuries.records ?? injuries,
-      leadershipBlunders: leadershipBlunders.records ?? leadershipBlunders,
-      projects: projects.records ?? projects,
-      sabotages: sabotages.records ?? sabotages,
-      training: training.records ?? training,
-      upgrades: upgrades.records ?? upgrades,
-      wildcards: wildcards.records ?? wildcards
+      healing: unwrap(healing),
+      injuries: unwrap(injuries),
+      blunders: unwrap(leadershipBlunders),
+      leadershipBlunders: unwrap(leadershipBlunders),
+      projects: unwrap(projects),
+      sabotages: unwrap(sabotages),
+      training: unwrap(training),
+      upgrades: unwrap(upgrades),
+      wildcards: unwrap(wildcards)
     }
   };
 }
