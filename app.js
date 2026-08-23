@@ -4,6 +4,7 @@ import { PitcheraGameController } from "./engine/adapter.js";
 const root=document.querySelector("#app");
 const NAMES=["Manager 1","Manager 2","Manager 3","Manager 4"];
 let game=null, errorMsg="";
+const paidWeeks=new Set();
 
 const money=n=>`$${Number(n??0).toLocaleString("en-US")}`;
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
@@ -82,9 +83,17 @@ function render(){
           <article class="panel action-panel">
             <div class="panel-head"><div><span class="eyebrow">GAME CONTROL</span><h2>QUICK ACTIONS</h2></div></div>
             <div class="actions">
-              <button data-action="nextDay">NEXT DAY <span>→</span></button>
-              <button data-action="activity">INTENSE GYM <span>+1 TR</span></button>
-              <button data-action="event">OPEN EVENT <span>◆</span></button>
+              ${s.day==="friday"
+                ? (()=>{ const sponsor=game.dispatch("evaluateSponsorTask",{managerId:current,week:s.week});
+                    return `<button class="primary-action" data-action="payday" ${paidWeeks.has(s.week)?"disabled":""}>${paidWeeks.has(s.week)?"PAYDAY CLAIMED":"PAYDAY"} <span>+ CASH</span></button>
+                   <button class="primary-action" data-action="claimSponsor" ${!sponsor?.available||!sponsor?.completed||sponsor?.alreadyPaid?"disabled":""}>${sponsor?.completed&&!sponsor?.alreadyPaid?"CLAIM SPONSOR":"SPONSOR"} <span>${sponsor?.reward?`+$${sponsor.reward}`:"—"}</span></button>
+                   <button class="primary-action" data-action="finishWeek">FINISH WEEK <span>→</span></button>`;
+                  })()
+                : s.day==="deadline"
+                ? `<button class="primary-action" data-action="finalScore">FINAL SCORING <span>→</span></button>`
+                : `<button data-action="nextDay">NEXT DAY <span>→</span></button>`}
+              <button data-action="activity" ${["saturday","sunday"].includes(s.day)?"":"disabled"}>INTENSE GYM <span>+1 TR</span></button>
+              <button data-action="event" ${s.day==="tuesday"?"":"disabled"}>OPEN EVENT <span>◆</span></button>
               <button data-action="board">BOARD PERK <span>◇</span></button>
             </div>
           </article>
@@ -106,28 +115,76 @@ function auctionView(s,cm){
  const a=s.auction;
  return `<div class="auction-grid">${a.players.map(p=>{
    const r=s.content?.rarity?.rarities?.find(x=>x.id===p.rarity);
-   const my=a.bids?.[p.id]?.managerId===cm.id;
-   return `<div class="player-card ${my?"mine":""}"><div class="rating">${p.rating??"—"}</div><div><b>${esc(p.name)}</b><small>${esc(p.position||"") } · ${esc(p.rarity||"")}</small></div><div class="price">${money(a.bids?.[p.id]?.amount??r?.baseAuctionPrice??0)}</div><button data-bid="${p.id}">${my?"BID PLACED":"BID"}</button></div>`;
- }).join("")}</div>`;
+   const my=Boolean(a.committedManagers?.[`${cm.id}:${p.id}`]);
+   return `<div class="player-card ${my?"mine":""}"><div class="rating">${p.rating??"—"}</div><div><b>${esc(p.name)}</b><small>${esc(p.position||"") } · ${esc(p.rarity||"")}</small></div><div class="price">${money(a.bids?.[p.id]??r?.baseAuctionPrice??0)}</div><button data-bid="${p.id}">${my?"BID PLACED":"BID"}</button></div>`;
+ }).join("")}
+  <div class="auction-footer">
+    <button class="gold-btn small" id="resolveAuction">RESOLVE AUCTION</button>
+    <span>Commit your bids, then resolve the market.</span>
+  </div>
+ </div>`;
 }
 function rosterView(m){
- if(!m?.lockerRoom?.length)return `<div class="empty">No players yet.<br><small>Win an auction to build your squad.</small></div>`;
- return `<div class="roster">${m.lockerRoom.map(p=>`<div class="roster-row"><span class="mini-rating">${p.card?.rating??"—"}</span><div><b>${esc(p.card?.name)}</b><small>${esc(p.card?.position||"")} · ${esc(p.card?.rarity||"")}</small></div></div>`).join("")}</div>`;
+ const roster=m?.lockerRoom||[];
+ const pending=m?.availablePlayers||[];
+ if(!roster.length && !pending.length)return `<div class="empty">No players yet.<br><small>Win an auction to build your squad.</small></div>`;
+ return `<div class="roster">
+   ${pending.map(p=>`<div class="roster-row pending"><span class="mini-rating">${p.card?.rating??"—"}</span><div><b>${esc(p.card?.name)}</b><small>WON AT AUCTION · ${esc(p.card?.position||"")}</small></div><button class="seat-btn" data-seat="${p.card?.id}">SEAT</button></div>`).join("")}
+   ${roster.map(p=>`<div class="roster-row"><span class="mini-rating">${p.card?.rating??"—"}</span><div><b>${esc(p.card?.name)}</b><small>${esc(p.card?.position||"")} · ${esc(p.card?.rarity||"")}</small></div></div>`).join("")}
+ </div>`;
 }
 
 function bind(){
  document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{game.state.currentManagerId=b.dataset.m;render()});
- document.querySelector("#reset").onclick=()=>{game=null;errorMsg="";boot()};
+ document.querySelector("#reset").onclick=()=>{game=null;errorMsg="";paidWeeks.clear();boot()};
+
  const open=document.querySelector("#openAuction");
- if(open)open.onclick=()=>{const ids=state().playerDeck.slice(-3).map(p=>p.id);dispatch("startAuction",{playerIds:ids})};
+ if(open) open.onclick=()=>{
+   const ids=state().playerDeck.slice(-3).map(p=>p.id);
+   dispatch("startAuction",{playerIds:ids});
+ };
+
  document.querySelectorAll("[data-bid]").forEach(b=>b.onclick=()=>{
    const p=state().auction.players.find(x=>x.id===b.dataset.bid);
    const r=state().content.rarity.rarities.find(x=>x.id===p.rarity);
    dispatch("bid",{managerId:state().currentManagerId,playerId:p.id,amount:r.baseAuctionPrice});
  });
- document.querySelector("[data-action=nextDay]").onclick=()=>dispatch("nextDay");
- document.querySelector("[data-action=activity]").onclick=()=>dispatch("chooseActivity",{managerId:state().currentManagerId,activity:"intense_gym"});
- document.querySelector("[data-action=event]").onclick=()=>dispatch("playEvent",{managerId:state().currentManagerId});
- document.querySelector("[data-action=board]").onclick=()=>dispatch("getBoardPerkStatus",{managerId:state().currentManagerId});
+
+ const resolve=document.querySelector("#resolveAuction");
+ if(resolve) resolve.onclick=()=>dispatch("resolveAuction");
+
+ document.querySelectorAll("[data-seat]").forEach(b=>b.onclick=()=>{
+   dispatch("seatPlayer",{managerId:state().currentManagerId,playerId:b.dataset.seat});
+ });
+
+ const next=document.querySelector("[data-action=nextDay]");
+ if(next) next.onclick=()=>dispatch("nextDay");
+
+ const payday=document.querySelector("[data-action=payday]");
+ if(payday) payday.onclick=()=>{
+   dispatch("payday");
+   paidWeeks.add(state().week);
+ };
+
+ const claim=document.querySelector("[data-action=claimSponsor]");
+ if(claim) claim.onclick=()=>dispatch("claimSponsorTask",{managerId:state().currentManagerId,week:state().week});
+
+ const finish=document.querySelector("[data-action=finishWeek]");
+ if(finish) finish.onclick=()=>dispatch("finishWeek");
+
+ const final=document.querySelector("[data-action=finalScore]");
+ if(final) final.onclick=()=>{game.state.day="final_scoring";render()};
+
+ const activity=document.querySelector("[data-action=activity]");
+ if(activity) activity.onclick=()=>dispatch("chooseActivity",{managerId:state().currentManagerId,activity:"intense_gym"});
+
+ const event=document.querySelector("[data-action=event]");
+ if(event) event.onclick=()=>{
+   errorMsg="The Event hand screen is the next UI module.";
+   render();
+ };
+
+ const board=document.querySelector("[data-action=board]");
+ if(board) board.onclick=()=>dispatch("getBoardPerkStatus",{managerId:state().currentManagerId});
 }
 boot();
